@@ -1,8 +1,8 @@
-nae: CI Build-
+name: CI Build-
 on :
   pull_request:
-    branches: (master)
-Jobs:
+    branches: [ "master" ]
+jobs:
   build:
     runs-on: ubuntu-latest
     container: python:3.9-slim
